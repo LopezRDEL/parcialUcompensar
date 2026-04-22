@@ -34,6 +34,65 @@ Desarrollar tabla de verdad a partir de la ecuación
 # Desarrollar
 
 - Exponer el paso a paso de creación de un archivo por medio de un terminal de Ubuntu, donde se cree un directorio, luego un archivo donde se escriba algo, se modifique, luego se mueva de carpeta y se elimine la carpeta que queda vacía.
+  ## Solución
+  ### Creación de directorios
+  - Se creó un directorio principal llamado Practica_Linux y dentro de este los subdirectorios Documentos y Backup.
+    
+    mkdir → crear carpetas
+    
+    cd → ingresar a un directorio
+    
+    <img width="921" height="88" alt="image" src="https://github.com/user-attachments/assets/3652db77-9537-4e86-86ea-f51db5d4648c" style="margin-bottom:10px;" />
+
+  ### Creación y edición de archivos
+  - Se creó un archivo de texto y se editó con contenido usando el editor nano.
+    
+    touch → crear archivos
+    
+    nano → editar archivos
+    
+    <img width="921" height="94" alt="image" src="https://github.com/user-attachments/assets/74e27e0f-da3f-4785-895c-00cd5e63606f" style="margin-bottom:10px;" />
+    <img width="920" height="132" alt="image" src="https://github.com/user-attachments/assets/4c5e69eb-20b9-4584-993c-8bce0f7130d0"  />
+    
+  ### Copia y renombrado de archivos
+  - Se realizó la copia de un archivo y posteriormente su cambio de nombre.
+    
+    cp → copiar archivos
+    
+    mv → mover o renombrar
+    
+    <img width="921" height="68" alt="image" src="https://github.com/user-attachments/assets/a4900151-9bcf-497a-9a11-3b954a3eac58" /> <br>
+    <img width="921" height="280" alt="image" src="https://github.com/user-attachments/assets/a6754f41-9825-46b8-a56a-10e341e48da2" /><br>
+
+  ###  Eliminación y permisos
+  - Se eliminaron directorios, se visualizó contenido y se modificaron permisos de acceso.
+    
+    rm -r → eliminar carpetas
+    
+    cat → ver contenido
+    
+    chmod → cambiar permisos
+    
+    ls -l → ver detalles
+    
+    <img width="921" height="327" alt="image" src="https://github.com/user-attachments/assets/6ae5540a-e2e1-4d56-b932-b2ef69dabb2d" /> <br>
+  ### Búsqueda de archivos y contenido
+  - Se realizaron búsquedas de archivos y palabras dentro de ellos.
+    
+    find → buscar archivos
+    
+    grep → buscar texto
+    
+    <img width="921" height="161" alt="image" src="https://github.com/user-attachments/assets/ebc551ba-0e01-4c7c-b7ec-22d0d638c414" /> <br>
+
+
+
+
+
+
+
+
+  
   
 - Desarrollar la configuración del PCO y del PC6 para que tenga internet.
 Adicionalmente configurar los switchs 1 y 2, con el router.
