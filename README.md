@@ -58,6 +58,9 @@ paso a paso.
 
 obtener lo siguiente:
 Dibujar el circuito
+
+<img width="1843" height="1050" alt="image" src="https://github.com/user-attachments/assets/7d2c2353-ecde-4669-b44f-f0c0546c7968" />
+
 Desarrollar tabla de verdad a partir de la ecuación
 
 
