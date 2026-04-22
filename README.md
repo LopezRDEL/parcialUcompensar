@@ -8,10 +8,40 @@
   # Parte conceptual
 - ¿Cual es la diferencia entre las diferentes topologías de RAID?, explique con un esquema cada arquitectura y su funcionamiento.
 
+
+
 - ¿Qué es docker? Y ¿Qué es una máquina virtual?, comentar las características arquitectura de cada una, además de sus diferencias y aplicaciones.
   
 - ¿Cuáles son las capas del modelo OSI?. Explicar cada una y dar ejemplos rea
 de aplicación
+## Modelo OSI 
+#### Aplicación:
+Interfaz directa con el usuario final (navegadores, correo).
+
+#### Presentación: 
+Traduce, cifra y comprime los datos para asegurar su legibilidad.
+
+#### Sesión: 
+Gestiona y controla las conexiones (inicia, mantiene y finaliza) entre dispositivos.
+
+#### Transporte:
+Asegura la transferencia de datos de extremo a extremo, controlando flujo y errores.
+
+#### Red:
+Determina el mejor camino (enrutamiento) para los datos a través de diferentes redes.
+
+#### Enlance de datos:
+Detecta y corrige errores físicos, gestionando el direccionamiento físico (MAC).
+
+#### Física: 
+Transmite bits puros a través de cables, fibra o radiofrecuencia.
+
+
+<img width="382" height="471" alt="image" src="https://github.com/user-attachments/assets/4d3abde7-d055-477f-8379-6a3b5f4fa6ff" />
+
+### Cita 
+Josan, M. (2021, enero 15). Modelo de capas OSI y TCP/IP. Curso de redes dede 0. NASeros. https://naseros.com/2021/01/15/modelo-de-capas-osi-y-tcp-ip/
+
 
 - ¿Cuáles son los tipos de nube?. Explicar cada uno y exponer sus respectivas características y un diagrama sencillo de funcionamiento.
 
