@@ -66,8 +66,8 @@ Desarrollar tabla de verdad a partir de la ecuación
 
 # Desarrollar
 
-- Exponer el paso a paso de creación de un archivo por medio de un terminal de Ubuntu, donde se cree un directorio, luego un archivo donde se escriba algo, se modifique, luego se mueva de carpeta y se elimine la carpeta que queda vacía.
-  ## Solución
+## Exponer el paso a paso de creación de un archivo por medio de un terminal de Ubuntu, donde se cree un directorio, luego un archivo donde se escriba algo, se modifique, luego se mueva de carpeta y se elimine la carpeta que queda vacía.
+  ### Solución
   ### Creación de directorios
   - Se creó un directorio principal llamado Practica_Linux y dentro de este los subdirectorios Documentos y Backup.
     
@@ -117,21 +117,245 @@ Desarrollar tabla de verdad a partir de la ecuación
     grep → buscar texto
     
     <img width="921" height="161" alt="image" src="https://github.com/user-attachments/assets/ebc551ba-0e01-4c7c-b7ec-22d0d638c414" /> <br>
-
-
-
-
-
-
-
-
   
-  
-- Desarrollar la configuración del PCO y del PC6 para que tenga internet.
-Adicionalmente configurar los switchs 1 y 2, con el router.
+## Desarrollar la configuración del PCO y del PC6 para que tenga internet. Adicionalmente configurar los switchs 1 y 2, con el router.
+### Solución y explicación de la configuración de red
+  ### Configuración de PC0 (PC1)
+  - IP Address: 192.168.10.2 255.255.255.0
 
-- ¿Cuáles son los pasos para crear el repositorio remoto, sincronizar, clonar ese repositorio a nivel local, para luego subir información y corroborar su estado a través de la terminal de github bash?
-- Si yo quiero crear una máquina virtual de Ubuntu en el pc 1, qué debo seguir para crearla?
+    Define la dirección única del equipo dentro de la red.
+  - La máscara indica que pertenece a la red 192.168.10.0.
+  - Default Gateway: 192.168.10.1
+
+    Es la puerta de enlace. Permite que el PC se comunique con otras redes (como Internet).
+  - DNS: 8.8.8.8
+
+    Servidor que traduce nombres de dominio (como google.com) a direcciones IP.
+    
+  ### Configuración de PC6
+  - IP Address: 192.168.20.2 255.255.255.0
+
+    Dirección IP del equipo dentro de la VLAN 20.
+  - Default Gateway: 192.168.20.1
+
+    Dirección del router para salir a otras redes.
+  - DNS: 8.8.8.8
+  
+    Permite resolver nombres de dominio.
+
+   ### Configuración del SWITCH 1 (SW1)
+  - enable
+  
+    Activa el modo privilegiado para poder configurar el switch.
+    
+  - configure terminal
+  
+    Permite ingresar al modo de configuración global.
+  
+  - vlan 10
+  
+    Crea la VLAN 10 en el switch.
+    
+  - name VLAN10
+  
+    Asigna un nombre a la VLAN para mejor identificación.
+  
+  - interface fa0/1
+  
+    Selecciona el puerto donde está conectado el PC1.
+  
+  - switchport mode access
+  
+    Configura el puerto como acceso (solo una VLAN).
+  
+  - switchport access vlan 10
+  
+    Asigna ese puerto a la VLAN 10.
+  
+  - interface fa0/24
+  
+    Selecciona el puerto que conecta al router.
+  
+  - switchport mode trunk
+  
+    Configura el puerto como troncal para permitir múltiples VLANs.
+  
+  - exit
+  
+    Sale del modo actual.
+  
+  ### Configuración del SWITCH 2 (SW2)
+  - enable
+  
+    Activa el modo privilegiado.
+  
+  - configure terminal
+  
+    Modo de configuración global.
+  
+  - vlan 20
+  
+    Crea la VLAN 20.
+  
+  - name VLAN20
+  
+    Asigna nombre a la VLAN.
+  
+  - interface fa0/1
+  
+    Puerto donde está conectado el PC6.
+  
+  - switchport mode access
+  
+    Configura el puerto como acceso.
+  
+  - switchport access vlan 20
+  
+    Asigna el puerto a la VLAN 20.
+  
+  - interface fa0/24
+  
+    Puerto que conecta al router.
+  
+  - switchport mode trunk
+  
+    Permite el paso de varias VLANs hacia el router.
+  
+  - exit
+  
+    Salir del modo.
+  
+  ### Configuración del ROUTER 
+  - enable
+  
+    Activa modo privilegiado.
+  
+  - configure terminal
+  
+    Modo configuración.
+  
+  - interface g0/0
+  
+    Selecciona la interfaz física conectada al switch.
+  
+  - no shutdown
+  
+    Activa la interfaz (por defecto está apagada).
+  
+  - interface g0/0.10
+  
+    Crea una subinterfaz para la VLAN 10.
+  
+  - encapsulation dot1Q 10
+  
+    Indica que usará etiquetado VLAN 10 (802.1Q).
+  
+  - ip address 192.168.10.1 255.255.255.0
+  
+    Asigna IP para servir como gateway de la VLAN 10.
+  
+  - interface g0/0.20
+  
+    Crea subinterfaz para VLAN 20.
+  
+  - encapsulation dot1Q 20
+  
+    Asocia la VLAN 20.
+  
+  - ip address 192.168.20.1 255.255.255.0
+  
+    Gateway para la VLAN 20.
+  
+  ### Verificación de conectividad
+  - ping 8.8.8.8
+  
+    Verifica conexión a Internet.
+  
+  - ping 192.168.10.1
+  
+    Prueba conexión entre PC1 y el router.
+  
+  - ping 192.168.20.1
+  
+    Prueba conexión entre PC6 y el router.
+
+
+## ¿Cuáles son los pasos para crear el repositorio remoto, sincronizar, clonar ese repositorio a nivel local, para luego subir información y corroborar su estado a través de la terminal de github bash?
+  ### Solución
+  ### Crear repositorio remoto en GitHub
+  1. Entra a GitHub
+  2. Clic en "New repository"
+  3. Nombre del repo (ej: mi-proyecto)
+  4. Público o privado
+  5. Clic en Create repository
+  6. Al final se obtiene una URL
+  ### Clonar el repositorio en local (Git Bash)
+  1. git clone https://github.com/usuario/mi-proyecto.git
+  2. cd mi-proyecto
+  ### Crear o agregar archivos: Edita y escribe contenido.
+  1. touch archivo.txt
+  ### Ver estado del repositorio: Te muestra archivos modificados o nuevos.
+  1. git status
+  ### Agregar archivos al staging
+  1. git add .
+  2. específico: git add archivo.txt
+  ### Hacer commit
+  1. git commit -m "Primer commit"
+  ### Subir cambios al repositorio remoto
+  1. git push origin main
+  2. Si existen ramas en el repositorio git push origin master
+  ### Verificar estado después de subir
+  1. git status
+  ### Sincronizar
+  1. git pull origin main
+  
+## Si yo quiero crear una máquina virtual de Ubuntu en el pc 1, qué debo seguir para crearla?
+  ### Solución
+  ### Paso inicial
+  Abrimos Virtual Box
+    <img width="680" height="712" alt="image" src="https://github.com/user-attachments/assets/51e5f69d-faf5-4b0a-8d89-3fa9fb062336" />
+ ### Crear nombre y establecer ISO
+  Le agregamos un nombre, tenemos que tener previamente la ISO de Ubuntu para que nos aparezca en "Type" = Linux y en version "Ubuntu(64-bit)"
+      
+  <img width="813" height="403" alt="image" src="https://github.com/user-attachments/assets/752d4509-7480-4797-8bac-04599befecf7" />
+      
+      
+  ### Crear perfil de usuario
+      
+  Creamos el nombre de usuario y la respectiva contraseña, en "Hostname no permite guiones bajos, por esa razon tiene un guion"
+      
+  <img width="815" height="409" alt="image" src="https://github.com/user-attachments/assets/dc74e006-591a-45c5-9171-56076909e96f" />
+      
+  También se recomienda marcar la casilla de Guest Additions para instalar la imagen ISO predeterminada de Guest Additions que se descarga junto con VirtualBox. Guest     Additions habilita varias funciones que mejoran la experiencia de usuario, como el cambio de resolución y el redimensionamiento dinámico de la pantalla
+      
+  ### Recursos de la maquina virtual 
+      
+  En la siguiente imagen se evidencia como se establece los recursos de la maquina virtual, como es una simulacion corta no es necesaria usar tantos recursos del sistema, tambien depende del equipo con el que cuente el usuario
+      
+  <img width="815" height="404" alt="image" src="https://github.com/user-attachments/assets/ce969419-1f4b-4c46-b34a-45e396e189f1" />
+      
+   ### Resumen de la maquina virtual 
+      
+  A continuacion se evidencia el resumen de los recursos, nombres, ISO etc...
+      
+  <img width="818" height="409" alt="image" src="https://github.com/user-attachments/assets/a3f2e0da-bd7f-4452-a42d-ac0727b82a5a" />
+      
+  ### Inicio de la maquina 
+      
+  Nos arroja la siguiente interfaz, donde debemos darle clic en iniciar para comenzar la simulacion de nuestra maquina virtual en VB
+      
+  <img width="702" height="710" alt="image" src="https://github.com/user-attachments/assets/a0a78614-7cf5-4420-8777-93bbee3fd59a" />
+      
+  ### Instalacion de Ubuntu 
+  No se debe interactuar con la maquina, ella misma comenzara el proceso de instalacion
+      
+  <img width="642" height="569" alt="image" src="https://github.com/user-attachments/assets/751b2087-9495-444e-b86e-2c31c30b1dab" /> <br>
+      
+  <img width="616" height="462" alt="image" src="https://github.com/user-attachments/assets/ce8fa526-a750-4271-8568-7230c6c98b6c" /> <br>
+      
+  <img width="606" height="462" alt="image" src="https://github.com/user-attachments/assets/2cacf7a1-9169-447c-970a-2d3c16dd446b" /> <br>
+      
+  <img width="625" height="483" alt="image" src="https://github.com/user-attachments/assets/d0035d69-28d1-462d-b1e7-c382137e722c" /> <br>
 
 # Parte empirica 
 
