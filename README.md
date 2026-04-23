@@ -8,10 +8,175 @@
   # Parte conceptual
 - ¿Cual es la diferencia entre las diferentes topologías de RAID?, explique con un esquema cada arquitectura y su funcionamiento.
 
+#### Raid 
+Sigmifica "Redundant Array of Independent Disks" es la combinacion de varios discos duros para mejorar aspectos tales como 
+
+- Velocidad
+- Seguridad
+- Ambas
+
+#### Tipos de RAID 
+
+#### 1. RAID 0 (Striping)
+
+Divide los datos en bloques y los reparte entre varios discos 
+
+#### Funcionamiento:
+
+Los archivos se parten y se escriben en paralelo.
+ 
+#### Características:
+
+- Muy rápido
+
+- No tiene redundancia
+
+- Si falla un disco → pierdes TODO
+
+#### Uso:
+- Edición de video
+- Juegos
+- Procesos donde importa la velocidad
+
+#### 2. RAID 1 (Mirroring)
+
+Duplica la información en dos discos
+
+#### Funcionamiento:
+
+Todo lo que se escribe en un disco, se copia en el otro.
+
+#### Características:
+- Alta seguridad
+
+- Baja capacidad útil (se duplica todo)
+
+- Lectura rápida, escritura normal
+ #### Uso:
+- Sistemas críticos
+  
+- Bases de datos pequeñas
+
+#### 3. RAID 5 (Paridad distribuida)
+
+Combina velocidad + tolerancia a fallos 
+
+#### Funcionamiento:
+
+- Los datos se distribuyen
+
+- Se agrega información de paridad (permite recuperar datos si falla un disco)
+
+#### Características:
+
+- Buen rendimiento
+  
+- Soporta fallo de 1 disco
+
+- Uso eficiente del espacio
+
+- Escritura un poco más lenta
+
+#### Uso:
+- Servidores
+
+- Empresas
+
+#### 4. RAID 10 (1+0)
+
+Combinacion del RAID 1 + RAID 0
+
+#### Funcionamiento:
+
+- Primero se duplican los datos (RAID 1)
+
+- Luego se distribuyen (RAID 0)
+
+#### Características:
+
+- Muy rápido
+- Alta tolerancia a fallos
+- Costoso (necesita más discos)
+#### Uso:
+
+- Sistemas críticos de alto rendimiento
+
+- Bases de datos grandes
+
+#### Resumen 
+
+RAID 0 → máximo rendimiento, sin protección
+
+RAID 1 → máxima seguridad, duplicación
+
+RAID 5 → equilibrio entre rendimiento y seguridad
+
+RAID 10 → alto rendimiento + alta seguridad
 
 
 - ¿Qué es docker? Y ¿Qué es una máquina virtual?, comentar las características arquitectura de cada una, además de sus diferencias y aplicaciones.
   
+#### Docker
+
+El docker es una plataforma que sirve para crear y ejecutar contenedores
+Un contenedor es un tipo de aplicación que contiene todo lo que necesita para hacer funcionar un sistema tales como (Código, librerías, dependencias) Cabe aclarar que este no incluye un sistema operativo completo
+
+#### Componentes clave Docker:
+- Docker Engine → motor que gestiona los contenedores
+  
+- Contenedores → donde corre la app
+
+- Imágenes → plantillas para crear contenedores
+
+- Docker Hub → repositorio de imágenes
+
+#### Aplicaciones de Docker:
+
+- Desarrollo de software
+
+- Microservicios
+
+- DevOps y CI/CD
+
+- Despliegue rápido de apps
+
+#### Máquina virtual
+
+Una maquina virtual (VM = Virtual machine) Es una emulación completa de un computador con su respectivo sistema operativo Se ejecuta sobre un software llamado hipervisor.
+Ejemplo de software: VirtualBox, VMware
+
+#### Características de las VM:
+- Aislamiento completo
+
+- Cada VM tiene su propio sistema operativo
+
+- Más seguras (a nivel de aislamiento)
+
+- Consumen más recursos
+
+- Arranque más lento
+
+
+#### Aplicaciones de las VM
+
+- Ejecutar distintos sistemas operativos
+
+- Pruebas de software
+
+- Servidores empresariales
+
+- Seguridad informática
+
+#### Diferencias clave: 
+
+<img width="492" height="168" alt="image" src="https://github.com/user-attachments/assets/b79de902-9a27-4b0d-8a3d-1b79924a19da" />
+
+#### Resumen:
+
+#### Docker: Ejecuta aplicaciones en contenedores ligeros compartiendo el mismo sistema operativo
+
+#### Máquina virtual: Simula un computador completo con su propio sistema operativo
+
 - ¿Cuáles son las capas del modelo OSI?. Explicar cada una y dar ejemplos rea
 de aplicación
 ## Modelo OSI 
