@@ -31,7 +31,7 @@ Los archivos se parten y se escriben en paralelo.
 
 - No tiene redundancia
 
-- Si falla un disco → pierdes TODO
+- Si falla un disco → Se pierde la información
 
 #### Uso:
 - Edición de video
@@ -52,7 +52,9 @@ Todo lo que se escribe en un disco, se copia en el otro.
 - Baja capacidad útil (se duplica todo)
 
 - Lectura rápida, escritura normal
+  
  #### Uso:
+ 
 - Sistemas críticos
   
 - Bases de datos pequeñas
@@ -210,6 +212,66 @@ Josan, M. (2021, enero 15). Modelo de capas OSI y TCP/IP. Curso de redes dede 0.
 
 - ¿Cuáles son los tipos de nube?. Explicar cada uno y exponer sus respectivas características y un diagrama sencillo de funcionamiento.
 
+#### Nube publica
+
+Se accede por medio de internet, la más común algunas como Amazon Web Services, Microsoft Azure, Google Cloud Platform
+
+#### Características:
+
+- Acceso desde cualquier lugar con internet
+
+- Pago por uso (tipo suscripción o consumo)
+
+- Escalable (subes o bajas recursos fácilmente)
+
+- No necesitas mantener hardware
+
+- Compartida entre múltiples usuarios
+
+#### Nube privada 
+
+Esta se le ve más en entornos como empresas o en cierto proveedor 
+
+#### Características:
+- Mayor control y seguridad
+
+- Personalización total
+
+- Más costosa
+
+- Requiere gestión técnica
+
+- Ideal para datos sensibles
+
+#### Nube Híbrido 
+
+La mezcla entre la nube pública + nube privada.
+
+Depende de que quiera la empresa usar. 
+
+#### Características:
+
+- Flexibilidad total
+
+- Permite mover datos entre entornos
+
+- Balance entre seguridad y escalabilidad
+
+- Más compleja de gestionar
+
+#### Nube comunitaria 
+La menos comun, varias empresas comparten los intereses en esta nube empresas o lugares como Hospitales, Universidades, Entidades gubernamentales
+
+#### Características:
+
+- Compartida entre organizaciones
+
+- Costos distribuidos
+
+- Seguridad enfocada en un sector específico
+
+- Menos flexible que la pública
+  
 # Parte de diseño
 - ¿Cuáles son las partes de un computador? Hacer un dibujo y explicarlas.
 Parte de Diseño
