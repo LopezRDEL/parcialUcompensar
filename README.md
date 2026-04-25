@@ -529,5 +529,35 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
   show ip interface brief
 
 - Si yo quiero tener una copia de seguridad en los servidores. ¿Qué raid me recomienda para la red? Y ¿Por qué?
+  RAID 1
+  <img width="1024" height="642" alt="Image" src="https://github.com/user-attachments/assets/98bb8c82-7947-4576-8235-b033ad06c535" />
+  Conocida como espejo duplica la informacion en 2 discos, en caso de que uno falle, el otro tiene la copia exacta.
+  
+  Es el mas sencilla de utilizar para respaldos basicos asegurando la disponibilidad, rendimiento, tolerancia a fallos y la eficiencia en el uso del almacenamiento.
   
 - Será que es bueno comprar cpu, gpu y tpu para cada una de mis sub-redes si la primera es para diseño gráfico, la segunda para recursos humanos, la tercera para físicos y matemáticos y la cuarta para el área TIC?. ¿Qué tecnologías debería usar cada equipo?
+  
+  No es necesario implementar cada componente en todas las subredes, ya que cada tecnología responde a distintas necesidades. Las CPU son indispensables para el trabajo de cada equipo; dependiendo de la necesidad, se haría uso de GPU en áreas como diseño gráfico o        simulaciones.
+  El uso de TPU está orientado a la inteligencia artificial a gran escala, y por lo general sus implementaciones se realizan en la nube. Por eso, es mejor asignar los recursos según las necesidades de cada área.
+
+  1. Subred Diseño Gráfico
+  CPU: alta gama (ej: Intel Core i7 Ultra 265K)
+  GPU: NVIDIA RTX (render, edición)
+  RAM: 32GB+
+
+  2. Subred Recursos Humanos
+  CPU: gama media(ej: Intel Core i5 14400)
+  RAM: 8-16GB
+  No hay necesidad de una GPU dedicada
+
+  3. Subred Físicos y Matemáticos
+  CPU: alto rendimiento(ej: AMD Ryzen 9 9950X3D)
+  GPU: opcional en caso de que se utilice para simulaciones o calculo matematico
+  RAM: 16-32GB
+  
+  4. SubredTIC
+  CPU: alta gama potente(ej: AMD Ryzen 9 7950X/9950X)
+  GPU: dedicada para un ejemplo de uso como virtualizacion e IA
+  TPU: almacenada en la nube
+    
+  
