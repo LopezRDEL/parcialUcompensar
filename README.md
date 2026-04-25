@@ -294,7 +294,10 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 
 # Desarrollar
 
-## Exponer el paso a paso de creación de un archivo por medio de un terminal de Ubuntu, donde se cree un directorio, luego un archivo donde se escriba algo, se modifique, luego se mueva de carpeta y se elimine la carpeta que queda vacía.
+<img width="1543" height="834" alt="image" src="https://github.com/user-attachments/assets/f7fd20b5-e7d3-468c-82c8-b46e96d108ea" /> <br>
+
+## <img width="1458" height="162" alt="image" src="https://github.com/user-attachments/assets/949a63c6-29e5-4389-adc7-ed4bfd9888bc" /> <br>
+
   ### Solución
   ### Creación de directorios
   - Se creó un directorio principal llamado Practica_Linux y dentro de este los subdirectorios Documentos y Backup.
@@ -346,7 +349,10 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
     
     <img width="921" height="161" alt="image" src="https://github.com/user-attachments/assets/ebc551ba-0e01-4c7c-b7ec-22d0d638c414" /> <br>
   
-## Desarrollar la configuración del PCO y del PC6 para que tenga internet. Adicionalmente configurar los switchs 1 y 2, con el router.
+
+
+## <img width="1475" height="171" alt="Captura de pantalla 2026-04-25 122229" src="https://github.com/user-attachments/assets/43482952-c1fc-428b-a927-a41165395a35" /> <br>
+
 ### Solución y explicación de la configuración de red
 <img width="381" height="360" alt="image" src="https://github.com/user-attachments/assets/ea897f65-a436-4a51-aa83-db5aa5aa02bd" />
 
@@ -422,7 +428,9 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 
 
 
-## ¿Cuáles son los pasos para crear el repositorio remoto, sincronizar, clonar ese repositorio a nivel local, para luego subir información y corroborar su estado a través de la terminal de github bash?
+## <img width="1451" height="150" alt="image" src="https://github.com/user-attachments/assets/74d45a44-abf9-4389-9b2f-2cabe674f330" /> <br>
+
+
   ### Solución
   ### Crear repositorio remoto en GitHub
   1. Entra a GitHub
@@ -451,7 +459,8 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
   ### Sincronizar
   1. git pull origin main
   
-## Si yo quiero crear una máquina virtual de Ubuntu en el pc 1, qué debo seguir para crearla?
+## <img width="1447" height="152" alt="image" src="https://github.com/user-attachments/assets/09a085ac-2f57-4752-b42b-820cb21a4006" />
+
   ### Solución
   ### Paso inicial
   Abrimos Virtual Box
