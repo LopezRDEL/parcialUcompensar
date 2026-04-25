@@ -347,164 +347,78 @@ Desarrollar tabla de verdad a partir de la ecuación
   
 ## Desarrollar la configuración del PCO y del PC6 para que tenga internet. Adicionalmente configurar los switchs 1 y 2, con el router.
 ### Solución y explicación de la configuración de red
-  ### Configuración de PC0 (PC1)
-  - IP Address: 192.168.10.2 255.255.255.0
+<img width="381" height="360" alt="image" src="https://github.com/user-attachments/assets/ea897f65-a436-4a51-aa83-db5aa5aa02bd" />
 
-    Define la dirección única del equipo dentro de la red.
+  ### Configuración de PC0 (PC0)
+  - IP Address: 192.168.10.2 255.255.255.0: Define la dirección única del equipo dentro de la red.
   - La máscara indica que pertenece a la red 192.168.10.0.
-  - Default Gateway: 192.168.10.1
-
-    Es la puerta de enlace. Permite que el PC se comunique con otras redes (como Internet).
-  - DNS: 8.8.8.8
-
-    Servidor que traduce nombres de dominio (como google.com) a direcciones IP.
+  - Default Gateway: 192.168.10.1: Es la puerta de enlace. Permite que el PC se comunique con otras redes (como Internet).
+  - DNS: 8.8.8.8: Servidor que traduce nombres de dominio (como google.com) a direcciones IP.
     
-  ### Configuración de PC6
-  - IP Address: 192.168.20.2 255.255.255.0
+    <img width="848" height="870" alt="Captura de pantalla 2026-04-25 103535" src="https://github.com/user-attachments/assets/15c29e64-01f0-4738-8fdd-49e12ed2a90c" /> <br>
 
-    Dirección IP del equipo dentro de la VLAN 20.
-  - Default Gateway: 192.168.20.1
+    
+  ### Configuración de PC1
 
-    Dirección del router para salir a otras redes.
-  - DNS: 8.8.8.8
-  
-    Permite resolver nombres de dominio.
+  - IP Address: 192.168.20.2 255.255.255.0: Dirección IP del equipo dentro de la VLAN 20.
+  - Default Gateway: 192.168.20.1: Dirección del router para salir a otras redes.
+  - DNS: 8.8.8.8: Permite resolver nombres de dominio.
+
+    <img width="857" height="833" alt="Captura de pantalla 2026-04-25 103717" src="https://github.com/user-attachments/assets/d9aa7b62-788c-4a8d-9b22-40d44c25dc32" /> <br>
+
 
    ### Configuración del SWITCH 1 (SW1)
-  - enable
-  
-    Activa el modo privilegiado para poder configurar el switch.
-    
-  - configure terminal
-  
-    Permite ingresar al modo de configuración global.
-  
-  - vlan 10
-  
-    Crea la VLAN 10 en el switch.
-    
-  - name VLAN10
-  
-    Asigna un nombre a la VLAN para mejor identificación.
-  
-  - interface fa0/1
-  
-    Selecciona el puerto donde está conectado el PC1.
-  
+  - enable: Activa el modo privilegiado para poder configurar el switch.
+  - configure terminal: Permite ingresar al modo de configuración global.
+  - vlan 10: Crea la VLAN 10 en el switch. 
+  - name VLAN10: Asigna un nombre a la VLAN para mejor identificación.
+  - interface fa0/1: Selecciona el puerto donde está conectado el PC1.
+  - switchport mode access: Configura el puerto como acceso (solo una VLAN).
+  - switchport access vlan 10: Asigna ese puerto a la VLAN 10.
+  - interface fa0/24: Selecciona el puerto que conecta al router.
   - switchport mode access
-  
-    Configura el puerto como acceso (solo una VLAN).
-  
-  - switchport access vlan 10
-  
-    Asigna ese puerto a la VLAN 10.
-  
-  - interface fa0/24
-  
-    Selecciona el puerto que conecta al router.
-  
-  - switchport mode trunk
-  
-    Configura el puerto como troncal para permitir múltiples VLANs.
-  
-  - exit
-  
-    Sale del modo actual.
+  - exit: Sale del modo actual.
+
+    <img width="544" height="190" alt="image" src="https://github.com/user-attachments/assets/9aa3e27b-f1c4-40b8-ad6f-c933e55ae7cb" /> <br>
+
   
   ### Configuración del SWITCH 2 (SW2)
-  - enable
-  
-    Activa el modo privilegiado.
-  
-  - configure terminal
-  
-    Modo de configuración global.
-  
-  - vlan 20
-  
-    Crea la VLAN 20.
-  
-  - name VLAN20
-  
-    Asigna nombre a la VLAN.
-  
-  - interface fa0/1
-  
-    Puerto donde está conectado el PC6.
-  
-  - switchport mode access
-  
-    Configura el puerto como acceso.
-  
-  - switchport access vlan 20
-  
-    Asigna el puerto a la VLAN 20.
-  
-  - interface fa0/24
-  
-    Puerto que conecta al router.
-  
-  - switchport mode trunk
-  
-    Permite el paso de varias VLANs hacia el router.
-  
-  - exit
-  
-    Salir del modo.
+  - enable: Activa el modo privilegiado.
+  - configure terminal: Modo de configuración global.
+  - vlan 20: Crea la VLAN 20.
+  - name VLAN20: Asigna nombre a la VLAN.
+  - interface fa0/1: Puerto donde está conectado el PC6.
+  - switchport mode access: Configura el puerto como acceso.
+  - switchport access vlan 20: Asigna el puerto a la VLAN 20.
+  - interface fa0/24: Puerto que conecta al router.
+  - switchport mode access: 
+  - exit: Salir del modo.
+
+    <img width="574" height="163" alt="image" src="https://github.com/user-attachments/assets/12ef9b8c-e112-4e64-876a-c433f6bf2f7a" /> <br>
+
   
   ### Configuración del ROUTER 
-  - enable
-  
-    Activa modo privilegiado.
-  
-  - configure terminal
-  
-    Modo configuración.
-  
-  - interface g0/0
-  
-    Selecciona la interfaz física conectada al switch.
-  
-  - no shutdown
-  
-    Activa la interfaz (por defecto está apagada).
-  
-  - interface g0/0.10
-  
-    Crea una subinterfaz para la VLAN 10.
-  
-  - encapsulation dot1Q 10
-  
-    Indica que usará etiquetado VLAN 10 (802.1Q).
-  
-  - ip address 192.168.10.1 255.255.255.0
-  
-    Asigna IP para servir como gateway de la VLAN 10.
-  
-  - interface g0/0.20
-  
-    Crea subinterfaz para VLAN 20.
-  
-  - encapsulation dot1Q 20
-  
-    Asocia la VLAN 20.
-  
-  - ip address 192.168.20.1 255.255.255.0
-  
-    Gateway para la VLAN 20.
+  - enable: Activa modo privilegiado.
+  - configure terminal: Modo configuración.
+  - interface GigabitEthernet0/0: Selecciona la interfaz física conectada al switch.
+  - no shutdown: Activa la interfaz (por defecto está apagada).
+  - ip address 192.168.10.1 255.255.255.0: Asigna IP para servir como gateway de la VLAN 10.
+  - interface GigabitEthernet0/1: Selecciona la interfaz física conectada al switch.
+  - ip address 192.168.20.1 255.255.255.0: Gateway para la VLAN 20.
+  - no shutdown: Activa la interfaz (por defecto está apagada).
+
+    <img width="806" height="505" alt="image" src="https://github.com/user-attachments/assets/d7fd9327-2c9b-4985-8f0b-0fe7872e63dc" />
+
   
   ### Verificación de conectividad
-  - ping 8.8.8.8
-  
-    Verifica conexión a Internet.
-  
-  - ping 192.168.10.1
-  
-    Prueba conexión entre PC1 y el router.
-  
-  - ping 192.168.20.1
-  
-    Prueba conexión entre PC6 y el router.
+  - ping 192.168.10.1: Prueba conexión entre PC1 y el router.
+    
+    <img width="473" height="203" alt="image" src="https://github.com/user-attachments/assets/d219ce6e-519d-4882-a1d8-f9cd3c548960" /> <br>
+
+  - ping 192.168.20.1: Prueba conexión entre PC6 y el router.
+
+    <img width="492" height="213" alt="image" src="https://github.com/user-attachments/assets/0f6bd568-2f18-4a0d-9a97-5b47e5a523d9" /> <br>
+
 
 
 ## ¿Cuáles son los pasos para crear el repositorio remoto, sincronizar, clonar ese repositorio a nivel local, para luego subir información y corroborar su estado a través de la terminal de github bash?
