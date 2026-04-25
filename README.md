@@ -271,24 +271,25 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 - Seguridad enfocada en un sector específico
 
 - Menos flexible que la pública
+
+  ##  ¿Cuáles son las partes de un computador? Hacer un dibujo y explicarlas.
   
 # Parte de diseño
-- ¿Cuáles son las partes de un computador? Hacer un dibujo y explicarlas.
-Parte de Diseño
-- Desarrolle el parcial en un repositorio de github y anexe la información solicitada
-paso a paso.
 
-- Analice Y observe la siguiente ecuación
+
+## Analice Y observe la siguiente ecuación
 
 <img width="543" height="69" alt="image" src="https://github.com/user-attachments/assets/8ddee2ed-b870-4eb0-a234-8a50e2a533a2" />
 
 
-obtener lo siguiente:
-Dibujar el circuito
+### Dibujar el circuito
 
 <img width="1843" height="1050" alt="image" src="https://github.com/user-attachments/assets/7d2c2353-ecde-4669-b44f-f0c0546c7968" />
 
-Desarrollar tabla de verdad a partir de la ecuación
+### Desarrollar tabla de verdad a partir de la ecuación
+
+<img width="1069" height="1443" alt="WhatsApp Image 2026-04-25 at 12 15 05 PM" src="https://github.com/user-attachments/assets/f481360f-b153-4656-88e9-492f8b4c9054" />
+
 
 
 # Desarrollar
