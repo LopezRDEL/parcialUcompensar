@@ -518,6 +518,8 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 - Desarrollo de los comandos a utilizar
   
 - ¿Como se verifica que las subredes tengan conexión entre ellas?
+
+  Desde un pc de una VLAN, se hace ping hacia la otra, si hay respuesta significa que hay conexion entre las subredes
   
 - Si yo quiero ver la tabla mac, las ip y vlans qué comandos debo usar?
   
