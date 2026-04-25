@@ -513,6 +513,7 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 - Diseñe una red que tenga cuatro vlans, dos vlans en cada switch que luego van conectados a un router, exponga el paso a paso de configuración y haga:
 
 - Esquema de la topología de red.
+  <img width="683" height="551" alt="Image" src="https://github.com/user-attachments/assets/e3e98c52-e38f-4471-a941-29ce7ba82fed" />
   
 - Desarrollo de los comandos a utilizar
   
@@ -520,6 +521,13 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
   
 - Si yo quiero ver la tabla mac, las ip y vlans qué comandos debo usar?
   
+  1. Comando para ver la tabla MAC:
+  show mac address-table
+  2. Comando para ver las VLAN:
+  show vlan brief
+  3. Comando para ver las ip asignadas
+  show ip interface brief
+
 - Si yo quiero tener una copia de seguridad en los servidores. ¿Qué raid me recomienda para la red? Y ¿Por qué?
   
 - Será que es bueno comprar cpu, gpu y tpu para cada una de mis sub-redes si la primera es para diseño gráfico, la segunda para recursos humanos, la tercera para físicos y matemáticos y la cuarta para el área TIC?. ¿Qué tecnologías debería usar cada equipo?
