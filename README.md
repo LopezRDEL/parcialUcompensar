@@ -307,6 +307,62 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 
 
   ##  ¿Cuáles son las partes de un computador? Hacer un dibujo y explicarlas.
+
+  ### Hardware (Partes fisicas del computador)
+
+  #### CPU (Unidad central de procesamiento)
+
+  Este es el cerebro del dispositivo, donde ejecuta instrucciones y procesa datos.
+- Procesador
+- Memoria RAM
+- Tarjeta madre
+
+#### Dispositivos de entrada 
+Estos funcionan para ingresar información 
+
+- Micrófono
+- Mouse
+- Teclado
+- Camara
+
+#### Dispositivos de salida 
+
+Muestran la información procesada
+
+- Monitor
+- Impresora
+- Parlantes
+
+#### Dispositivos de almacenamiento 
+
+Guardan la información 
+
+- Discos duro
+- Unidad de estado sólido
+- USB
+
+### Software
+
+Es el funiconamiento interno del sistema (Lo no palpable)
+
+#### Sistema operativo
+
+Programa que controla todo
+
+- Windows
+- Linux
+- MacOS
+
+#### Aplicaciones
+
+Programas se usan para tareas especificas
+
+- Navegador
+- Word
+- Juegos
+
+
+  
   
 # Parte de diseño
 
