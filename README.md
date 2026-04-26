@@ -302,6 +302,9 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 
   <img width="746" height="190" alt="image" src="https://github.com/user-attachments/assets/dfb1e201-bf7f-4bad-9f59-48f2ba610f8e" />
 
+  <img width="888" height="665" alt="image" src="https://github.com/user-attachments/assets/7b70dc28-e5a1-4123-b8dc-441f47e4f6d6" />
+
+
 
   ##  ¿Cuáles son las partes de un computador? Hacer un dibujo y explicarlas.
   
