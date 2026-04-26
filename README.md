@@ -300,6 +300,9 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 
 - Menos flexible que la pública
 
+  <img width="746" height="190" alt="image" src="https://github.com/user-attachments/assets/dfb1e201-bf7f-4bad-9f59-48f2ba610f8e" />
+
+
   ##  ¿Cuáles son las partes de un computador? Hacer un dibujo y explicarlas.
   
 # Parte de diseño
