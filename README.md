@@ -513,55 +513,55 @@ La menos comun, varias empresas comparten los intereses en esta nube empresas o 
 - Diseñe una red que tenga cuatro vlans, dos vlans en cada switch que luego van conectados a un router, exponga el paso a paso de configuración y haga:
 
 - Esquema de la topología de red.
-  <img width="683" height="551" alt="Image" src="https://github.com/user-attachments/assets/e3e98c52-e38f-4471-a941-29ce7ba82fed" />
+  <img width="683" height="551" alt="Image" src="https://github.com/user-attachments/assets/e3e98c52-e38f-4471-a941-29ce7ba82fed" /><br>
   
 - Desarrollo de los comandos a utilizar
   Configuracion Router Cisco 2911
-  <img width="599" height="667" alt="Image" src="https://github.com/user-attachments/assets/5c301a28-3e7a-446f-869e-20802ed415b5" />
-  <img width="680" height="117" alt="Image" src="https://github.com/user-attachments/assets/232b11e8-91e6-4556-af9c-6040551d39e9" />
+  <img width="599" height="667" alt="Image" src="https://github.com/user-attachments/assets/5c301a28-3e7a-446f-869e-20802ed415b5" /><br>
+  <img width="680" height="117" alt="Image" src="https://github.com/user-attachments/assets/232b11e8-91e6-4556-af9c-6040551d39e9" /><br>
 
   Configuracion Switch 1 Cisco 2960 24 puertos
   Configuramos el puerto 24 en modo troncal para conectarlo al router
   
-  <img width="282" height="27" alt="Image" src="https://github.com/user-attachments/assets/78302a06-9e2c-4c58-bad2-0e51e1caefda" />
+  <img width="282" height="27" alt="Image" src="https://github.com/user-attachments/assets/78302a06-9e2c-4c58-bad2-0e51e1caefda" /><br>
   
   Configuramos dos Vlan, Vlan 1 puerto en modo access con ip 192.168.10.2
-  <img width="398" height="52" alt="Image" src="https://github.com/user-attachments/assets/4b015acb-deb7-46d4-9ac4-7b444881f347" />
-  <img width="297" height="65" alt="Image" src="https://github.com/user-attachments/assets/4f8c0ebf-71bb-4d10-a911-46c2c64845bb" />
+  <img width="398" height="52" alt="Image" src="https://github.com/user-attachments/assets/4b015acb-deb7-46d4-9ac4-7b444881f347" /><br>
+  <img width="297" height="65" alt="Image" src="https://github.com/user-attachments/assets/4f8c0ebf-71bb-4d10-a911-46c2c64845bb" /><br>
 
   Vlan 2  puerto en modo access con ip 192.168.20.2
   
-  <img width="542" height="145" alt="Image" src="https://github.com/user-attachments/assets/8c12c042-c68e-4316-b70a-9bd0ba523eff" />
-  <img width="297" height="56" alt="Image" src="https://github.com/user-attachments/assets/691ebd05-b5f1-45e3-a984-b5dcb6e85dd8" />
+  <img width="542" height="145" alt="Image" src="https://github.com/user-attachments/assets/8c12c042-c68e-4316-b70a-9bd0ba523eff" /><br>
+  <img width="297" height="56" alt="Image" src="https://github.com/user-attachments/assets/691ebd05-b5f1-45e3-a984-b5dcb6e85dd8" /><br>
 
   Configuracion Switch 1 PC 1
-  <img width="698" height="708" alt="Image" src="https://github.com/user-attachments/assets/3e35291b-6eb8-45c6-b737-b361cc4a6dc8" />
-  <img width="422" height="330" alt="Image" src="https://github.com/user-attachments/assets/ad261338-f3f3-4f75-b7c0-fa0e70cd1941" />
+  <img width="698" height="708" alt="Image" src="https://github.com/user-attachments/assets/3e35291b-6eb8-45c6-b737-b361cc4a6dc8" /><br>
+  <img width="422" height="330" alt="Image" src="https://github.com/user-attachments/assets/ad261338-f3f3-4f75-b7c0-fa0e70cd1941" /><br>
   
   Configuracion Switch 1 PC 2
-  <img width="694" height="704" alt="Image" src="https://github.com/user-attachments/assets/480e16f2-e685-4af8-924c-dd620841c21f" />
-  <img width="417" height="355" alt="Image" src="https://github.com/user-attachments/assets/b4fd3e92-9d89-4a27-bb06-1931f9ca403d" />
+  <img width="694" height="704" alt="Image" src="https://github.com/user-attachments/assets/480e16f2-e685-4af8-924c-dd620841c21f" /><br>
+  <img width="417" height="355" alt="Image" src="https://github.com/user-attachments/assets/b4fd3e92-9d89-4a27-bb06-1931f9ca403d" /><br>
 
 
 
   Configuracion Switch 2 Cisco 2960 24 puertos
   Configuramos el puerto 24 en modo troncal para conectarlo al router
   
-  <img width="282" height="27" alt="Image" src="https://github.com/user-attachments/assets/78302a06-9e2c-4c58-bad2-0e51e1caefda" />
+  <img width="282" height="27" alt="Image" src="https://github.com/user-attachments/assets/78302a06-9e2c-4c58-bad2-0e51e1caefda" /><br>
   
   Configuramos dos Vlan, Vlan 1 puerto en modo access con ip 192.168.30.2
-  <img width="547" height="194" alt="Image" src="https://github.com/user-attachments/assets/89f772ec-eea0-476d-ae3b-8c3de3173edd" />
+  <img width="547" height="194" alt="Image" src="https://github.com/user-attachments/assets/89f772ec-eea0-476d-ae3b-8c3de3173edd" /><br>
 
   Vlan 2  puerto en modo access con ip 192.168.40.2
-  <img width="559" height="182" alt="Image" src="https://github.com/user-attachments/assets/777d8cae-6588-4ba4-9469-8539a7042f8d" />
+  <img width="559" height="182" alt="Image" src="https://github.com/user-attachments/assets/777d8cae-6588-4ba4-9469-8539a7042f8d" /><br>
 
   Configuracion Switch 2 PC 1
-  <img width="701" height="707" alt="Image" src="https://github.com/user-attachments/assets/2ef89616-1b36-4a45-be11-c1dedddbd928" />
-  <img width="415" height="358" alt="Image" src="https://github.com/user-attachments/assets/cbad74f8-096c-45f4-a9c1-9fe1e475c3fd" />
+  <img width="698" height="708" alt="Image" src="https://github.com/user-attachments/assets/b2040b55-9bbc-4baa-870a-79f645c5856a" /><br>
+  <img width="415" height="358" alt="Image" src="https://github.com/user-attachments/assets/cbad74f8-096c-45f4-a9c1-9fe1e475c3fd" /><br>
   
   Configuracion Switch 2 PC 2
-  <img width="701" height="707" alt="Image" src="https://github.com/user-attachments/assets/a9a37e72-805b-46ea-98a2-b676c9e346a3" />
-  <img width="528" height="369" alt="Image" src="https://github.com/user-attachments/assets/2c2cb3d0-2558-4fde-8c54-8679f9bb4174" />
+  <img width="701" height="707" alt="Image" src="https://github.com/user-attachments/assets/a9a37e72-805b-46ea-98a2-b676c9e346a3" /><br>
+  <img width="528" height="369" alt="Image" src="https://github.com/user-attachments/assets/2c2cb3d0-2558-4fde-8c54-8679f9bb4174" /><br>
   
 - ¿Como se verifica que las subredes tengan conexión entre ellas?
 
