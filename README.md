@@ -191,10 +191,10 @@ de aplicación
 ## Modelo OSI 
 #### Aplicación:
 Interfaz directa con el usuario final (navegadores, correo).
-Ejemplos:
-Abrir una página web
-Enviar un correo
-Usar WhatsApp
+  Ejemplos:
+  Abrir una página web
+  Enviar un correo
+  Usar WhatsApp
 
 #### Presentación: 
 Traduce, cifra y comprime los datos para asegurar su legibilidad.
