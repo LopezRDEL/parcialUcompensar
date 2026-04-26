@@ -109,12 +109,19 @@ Combinacion del RAID 1 + RAID 0
 
 RAID 0 → máximo rendimiento, sin protección
 
+<img width="972" height="784" alt="Image" src="https://github.com/user-attachments/assets/6c214c6d-1dd6-4c3a-9ff9-a0e234e74d51" />
+
 RAID 1 → máxima seguridad, duplicación
+
+<img width="1005" height="753" alt="Image" src="https://github.com/user-attachments/assets/515ccbfe-349a-423b-b966-da25604d844b" />
 
 RAID 5 → equilibrio entre rendimiento y seguridad
 
+<img width="1600" height="700" alt="Image" src="https://github.com/user-attachments/assets/b345e8b4-b33c-498c-b6a4-97089b8d3f31" />
+
 RAID 10 → alto rendimiento + alta seguridad
 
+<img width="1600" height="829" alt="Image" src="https://github.com/user-attachments/assets/350e26b8-f813-4ff9-91a7-7318e18b9193" />
 
 - ¿Qué es docker? Y ¿Qué es una máquina virtual?, comentar las características arquitectura de cada una, además de sus diferencias y aplicaciones.
   
