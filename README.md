@@ -191,25 +191,46 @@ de aplicación
 ## Modelo OSI 
 #### Aplicación:
 Interfaz directa con el usuario final (navegadores, correo).
+Ejemplos:
+Abrir una página web
+Enviar un correo
+Usar WhatsApp
 
 #### Presentación: 
 Traduce, cifra y comprime los datos para asegurar su legibilidad.
+Ejemplos:
+Cifrado HTTPS 
+Conversión de imágenes, texto, audio
 
 #### Sesión: 
 Gestiona y controla las conexiones (inicia, mantiene y finaliza) entre dispositivos.
+Ejemplo:
+Mantener sesión iniciada en una página
+Login en plataformas
 
 #### Transporte:
 Asegura la transferencia de datos de extremo a extremo, controlando flujo y errores.
+Ejemplo:
+TCP → asegura que llegue todo (correo, web)
+UDP → rápido pero sin garantía (streaming, juegos)
 
 #### Red:
 Determina el mejor camino (enrutamiento) para los datos a través de diferentes redes.
+Ejemplo;
+La IP: 192.168.X.X
+Internet decide por dónde enviar datos
 
 #### Enlance de datos:
 Detecta y corrige errores físicos, gestionando el direccionamiento físico (MAC).
+Ejemplo:
+Switch identifica dispositivos por MAC
 
 #### Física: 
 Transmite bits puros a través de cables, fibra o radiofrecuencia.
-
+Ejemplo:
+Cables
+Señal WiFi
+Puertos
 
 <img width="382" height="471" alt="image" src="https://github.com/user-attachments/assets/4d3abde7-d055-477f-8379-6a3b5f4fa6ff" />
 
