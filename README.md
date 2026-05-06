@@ -9,7 +9,7 @@
 - ¿Cual es la diferencia entre las diferentes topologías de RAID?, explique con un esquema cada arquitectura y su funcionamiento.
 
 #### Raid 
-Sigmifica "Redundant Array of Independent Disks" es la combinacion de varios discos duros para mejorar aspectos tales como 
+Significa "Redundant Array of Independent Disks" es la combinacion de varios discos duros para mejorar aspectos tales como 
 
 - Velocidad
 - Seguridad
